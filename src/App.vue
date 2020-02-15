@@ -12,5 +12,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style>
+  * {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
 </style>
