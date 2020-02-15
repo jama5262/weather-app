@@ -5,18 +5,20 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    city: "Nairobi",
-    weatherDescription: "broken clouds",
+    city: "London",
+    weatherDescription: "clouds",
     weatherIcon: "cloud-showers-heavy",
-    temperature: 12,
-    windSpeed: 50,
+    temperature: 18,
+    windSpeed: 56,
     queryCity: ""
   },
   mutations: {
-
+    updateCityQuery: (state, query) => {
+      state.queryCity = query
+    }
   },
   getters: {
-    getTemperature: state => {
+    temperature: state => {
       return state.temperature
     }
   },

@@ -2,7 +2,7 @@
   <div>
     <b-row>
       <b-col>
-        <p class="h1 font-weight-bold m-0 text-center">{{ celcius }}°</p>
+        <p class="h1 font-weight-bold m-0 text-center">{{ temperature }}°</p>
       </b-col>
     </b-row>
     <b-row>
@@ -21,12 +21,12 @@
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
+
 export default {
-  data() {
-    return {
-      celcius: 12,
-      windSpeed: 50
-    };
-  }
+  computed: {
+    ...mapState(["windSpeed"]),
+    ...mapGetters(["temperature"])
+  },
 };
 </script>
