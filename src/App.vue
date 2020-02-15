@@ -1,19 +1,16 @@
 <template>
-  <div>
-    {{ name }}
-  </div>
+  <Home />
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        name: "jama"
-      }
-    },
+import Home from "./views/Home";
+
+export default {
+  components: {
+    Home
   }
+};
 </script>
 
 <style lang="scss" scoped>
-
 </style>
