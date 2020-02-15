@@ -1,7 +1,5 @@
 <template>
-    <div>
-        Weather Icon
-    </div>
+    <font-awesome-icon icon="cloud-showers-heavy" size="10x" />
 </template>
 
 <script>

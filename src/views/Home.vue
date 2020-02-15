@@ -1,10 +1,12 @@
 <template>
-  <div>
-      <Header />
-      <WeatherIcon />
-      <Details />
-      <Input />
-  </div>
+  <b-container>
+      <b-row align-h="center" cols="1">
+          <b-col><Header /></b-col>
+          <b-col class="d-flex justify-content-center"><WeatherIcon /></b-col>
+          <b-col><Details /></b-col>
+          <b-col class="d-flex justify-content-center"><Input /></b-col>
+      </b-row>
+  </b-container>
 </template>
 
 <script>

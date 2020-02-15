@@ -1,6 +1,7 @@
 <template>
     <div>
-        Header
+        <p class="display-4 text-center">Contry</p>
+        <p class="h5 text-center">Description</p>
     </div>
 </template>
 
@@ -10,6 +11,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+    p {
+        margin: 0
+    }
 </style>
