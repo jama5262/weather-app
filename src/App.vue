@@ -13,6 +13,10 @@ export default {
 </script>
 
 <style>
+  * {
+    font-family: 'Quicksand', sans-serif;
+  }
+
   html,
   body {
     height: 100%;
