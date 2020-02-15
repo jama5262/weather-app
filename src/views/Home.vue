@@ -1,8 +1,8 @@
 <template>
   <b-container>
-      <b-row align-h="center" cols="1">
+      <b-row align-v="center" align-h="center" cols="1">
           <b-col><Header /></b-col>
-          <b-col class="d-flex justify-content-center"><WeatherIcon /></b-col>
+          <b-col class="d-flex justify-content-center my-5"><WeatherIcon /></b-col>
           <b-col><Details /></b-col>
           <b-col class="d-flex justify-content-center"><Input /></b-col>
       </b-row>

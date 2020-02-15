@@ -1,7 +1,7 @@
 <template>
     <div>
-        <p class="display-4 text-center">Contry</p>
-        <p class="h5 text-center">Description</p>
+        <p class="h3 text-center">NAIROBI</p>
+        <p class="h6 text-center">BROKEN CLOUDS</p>
     </div>
 </template>
 
