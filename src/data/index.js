@@ -1,6 +1,9 @@
 import axios from "axios"
 
 const fetchWeatherData = async q => {
+
+  console.log("CALLED", q);
+
   try {
     let data = await axios.get("https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather", {
       params: {
@@ -17,7 +20,7 @@ const fetchWeatherData = async q => {
     }
   } catch (error) {
     throw {
-      city: "Oops ☹️, looks like i couldn't find that",
+      city: "Oops ☹️, looks like I couldn't find that",
       weatherDescription: "",
       weatherIcon: "exclamation-triangle",
       temperature: 273.15,

@@ -5,6 +5,19 @@ import fetchWeatherData from "../data";
 
 Vue.use(Vuex)
 
+export const fetchWeather = async ({ commit, state }) => {
+  try {
+    commit("updateLoading", true)
+    let data = await fetchWeatherData(state.queryCity)
+    commit("updateWeatherData", data)
+  } catch (error) {
+    commit("updateWeatherData", error)
+  } finally {
+    commit("updateCityQuery", "")
+    commit("updateLoading", false)
+  }
+}
+
 export default new Vuex.Store({
   state: {
     weatherData: {
@@ -25,7 +38,7 @@ export default new Vuex.Store({
       state.queryCity = query
     },
     updateWeatherIcon: (state, icon) => {
-      state.weatherIcon = icon
+      state.weatherData.weatherIcon = icon
     },
     updateLoading: (state, loading) => {
       state.loading = loading
@@ -37,17 +50,6 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    fetchWeather: async ({ commit, state }) => {
-      try {
-        commit("updateLoading", true)
-        let data = await fetchWeatherData(state.queryCity)
-        commit("updateWeatherData", data)
-      } catch (error) {
-        commit("updateWeatherData", error)
-      } finally {
-        commit("updateCityQuery", "")
-        commit("updateLoading", false)
-      }
-    }
+    fetchWeather
   },
 })
