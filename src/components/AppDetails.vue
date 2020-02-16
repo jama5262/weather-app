@@ -2,7 +2,7 @@
   <div>
     <b-row>
       <b-col>
-        <p class="h1 font-weight-bold m-0 text-center">{{ temperature }}°</p>
+        <p class="h1 font-weight-bold m-0 text-center">{{ temperature }} °</p>
       </b-col>
     </b-row>
     <b-row>
@@ -12,7 +12,7 @@
             <font-awesome-icon icon="wind" size="lg" />
           </b-col>
           <b-col class="flex-grow-0 text-nowrap">
-            <p class="h5 m-0">{{ windSpeed }} m/s</p>
+            <p class="h5 m-0">{{ weatherData.windSpeed }} m/s</p>
           </b-col>
         </b-row>
       </b-col>
@@ -25,7 +25,7 @@ import { mapState, mapGetters } from 'vuex'
 
 export default {
   computed: {
-    ...mapState(["windSpeed"]),
+    ...mapState(["weatherData"]),
     ...mapGetters(["temperature"])
   },
 };
