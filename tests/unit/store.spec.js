@@ -7,7 +7,7 @@ jest.mock("../../src/data")
 const defaultState = store.state
 
 const resetState = () => {
-  return store.replaceState(defaultState)
+  store.replaceState(defaultState)
 }
 
 describe('Mutations', () => {
