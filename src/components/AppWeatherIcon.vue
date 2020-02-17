@@ -6,7 +6,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import {animateIcon} from "@/animation"
+import animateIcon from "@/animation"
 
 export default {
   computed: {

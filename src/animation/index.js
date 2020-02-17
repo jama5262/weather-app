@@ -1,8 +1,10 @@
 import anime from 'animejs/lib/anime.es.js';
 
-export const animateIcon = targets => {
+const animateIcon = targets => {
   anime({
     targets,
     scale: [0, 1]
   });
 }
+
+export default animateIcon
