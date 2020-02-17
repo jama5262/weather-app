@@ -3,6 +3,7 @@
     <b-row cols="1" align-h="center">
       <b-col>
         <b-form-input
+          ref="b-form-input"
           variant="dark"
           :value="queryCity"
           @input="updateCityQuery"
@@ -11,7 +12,7 @@
         ></b-form-input>
       </b-col>
       <b-col class="d-flex justify-content-center mt-4">
-        <b-button @click="fetchWeather" variant="dark">
+        <b-button ref="b-button" @click="fetchWeather" variant="dark">
           <span
             v-if="loading"
             class="spinner-border spinner-border-sm"
