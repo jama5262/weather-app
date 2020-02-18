@@ -24,7 +24,7 @@ VUE_APP_OPEN_WEATHER_API_KEY=<YOUR_OPEN_WEATHER_API_KEY>
 
 ### Running Docker
 
-To setup using docker, run the following docker-compose comand
+To setup using docker, run the following docker-compose command
 ```
 docker-compose up
 ```
@@ -62,7 +62,7 @@ Reach out to me at one of the following places!
 ```
 MIT License
 
-Copyright (c) 2019 Jama Mohamed
+Copyright (c) 2020 Jama Mohamed
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
