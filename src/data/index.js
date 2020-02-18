@@ -39,7 +39,7 @@ const getWeatherIcon = weather => {
       weatherIcon = "cloud-showers-heavy"
       break;
     case "Snow":
-      weatherIcon = "snow-flake"
+      weatherIcon = "snowflake"
       break;
     case "Mist":
       weatherIcon = "smog"

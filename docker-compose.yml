@@ -1,0 +1,9 @@
+version: "3"
+
+services: 
+  web-app:
+    image: jama5262/vue-weather-app
+    ports: 
+      - 8080:8080
+    environment:
+      - VUE_APP_OPEN_WEATHER_API_KEY=${VUE_APP_OPEN_WEATHER_API_KEY}
