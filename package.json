@@ -36,7 +36,9 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest",
-    "transformIgnorePatterns": ["/node_modules/(?!animejs)"],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!animejs)"
+    ],
     "collectCoverage": true,
     "collectCoverageFrom": [
       "<rootDir>/src/components/*.vue",
