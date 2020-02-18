@@ -20,7 +20,7 @@ Create a `.env` file and add the following variables
 ```
 VUE_APP_OPEN_WEATHER_API_KEY=<YOUR_OPEN_WEATHER_API_KEY>
 ```
-**The project can be setup in two ways, using docker or cloning**
+**The project can be setup in two ways, using docker or runnig locally using npm**
 
 ### Running Docker
 
