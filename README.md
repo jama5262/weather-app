@@ -24,7 +24,7 @@ VUE_APP_OPEN_WEATHER_API_KEY=<YOUR_OPEN_WEATHER_API_KEY>
 
 ### Running Docker
 
-**__Please make sure to create a `.env` file which should have your api key, which can be found here at Open Weather__**
+**__Please make sure to create a `.env` file which should have your api key, which can be found at [Open Weather](https://openweathermap.org/current)__**
 
 To setup using docker, run the following docker-compose command
 ```
